@@ -8,10 +8,8 @@ function getQuote() {
 
 function createTweet(input) {
     var data = input[0];
-
     var quoteText = $(data.content).text().trim();
-    var quoteAuthor = data.title;
-  
+    var quoteAuthor = data.title;  
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
     
     if (tweetText.length > 140) {
